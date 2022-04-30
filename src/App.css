@@ -1,0 +1,14 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* LOGO principal */
+.navbar-brand {
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.navbar-brand::first-letter {
+  transform: scale(1.5);
+  font-weight: 700;
+  color: red;
+}
