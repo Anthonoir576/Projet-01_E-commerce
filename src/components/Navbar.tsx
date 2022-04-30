@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="http://google.fr/">
+          <a className="navbar-brand" href="*">
             La boutique pour lui
           </a>
           <button
@@ -25,20 +25,20 @@ const Navbar = () => {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="http://google.fr/"
+                  href="*"
                 >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="http://google.fr/">
+                <a className="nav-link" href="*">
                   Link
                 </a>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="http://google.fr/"
+                  href="*"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -48,12 +48,12 @@ const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="http://google.fr/">
+                    <a className="dropdown-item" href="*">
                       Action
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="http://google.fr/">
+                    <a className="dropdown-item" href="*">
                       Another action
                     </a>
                   </li>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="http://google.fr/">
+                    <a className="dropdown-item" href="*">
                       Something else here
                     </a>
                   </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="nav-link disabled"
-                  href="http://google.fr/"
+                  href="*"
                   tabIndex={-1}
                   aria-disabled="true"
                 >
