@@ -40,10 +40,14 @@ const Produits = () => {
 
     return (
         <div>
-            <div className="container">
+            <div className="container text-center py-2 arrow-container shadow-sm">
+               <i className="fa fa-arrow-down"></i> 
+            </div>
+            
+            <div className="container my-5 py-5">
                 <div className="row">
-                    <div className="col-12">
-                        <h2>Ajout récent</h2>
+                    <div className="col-12 mb-5">
+                        <h2 className='recent display-6 fw-bolder text-end'>Ajout récent</h2>
                     </div>
                 </div>
             </div>
