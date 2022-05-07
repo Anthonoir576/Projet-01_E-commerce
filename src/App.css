@@ -84,7 +84,7 @@
   box-shadow: 1px 10px 7px -7px rgba(0, 0, 0, 0.75);
 }
 
-.hero .card-text {
+.card-hero .card-text {
   width: 59.7%;
   text-align: justify;
 }
@@ -263,13 +263,13 @@
   object-fit: contain;
 }
 .carte-produit {
-  height: 480px;
+  height: 470px;
   margin-bottom: 25px;
 }
 .carte-produit .card-title {
   font-size: 15px;
-  max-height: 90px;
-  height: 90px;
+  max-height: 70px;
+  height: 70px;
 }
 .carte-produit .btn {
   display: block;

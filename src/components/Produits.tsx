@@ -46,16 +46,16 @@ const Produits = () => {
           return (
             <>
               <div className="col-md-3">
-                <div className="card carte-produit">
+                <div className="card carte-produit" key={product.id}>
                   <img
                     src={product.image}
                     className="card-img-top carte-produit-img"
                     alt={product.title}
                   />
-                  <div className="card-body">
-                    <h5 className="card-title">{product.title}</h5>
-                    <p className="card-text">
-                        {product.price} €
+                  <div className="card-body text-center">
+                    <h5 className="card-title">{product.title.substring(0,70)}</h5>
+                    <p className="card-text fw-bolder text-center">
+                        <em>{product.price}</em> €
                     </p>
                     <a href="*" className="btn btn-danger">
                     Ajouter   <i className="fa fa-shopping-cart"></i>
