@@ -1,7 +1,7 @@
 /* Config / Reset */
 /* ******************************************* */
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /* ******************************************* */
 
@@ -36,5 +36,22 @@
   object-fit: cover;
   width: 100%;
   border-radius: 0;
+}
+
+.hero .card-title {
+  font-weight: 900;
+  text-shadow: 0px 0px 2px rgb(255, 255, 255);
+  margin-bottom: 2rem;
+}
+.hero .card-title::first-letter {
+  color: red;
+}
+.hero .card-title::after {
+  content: "";
+  display: block;
+  width: 22%;
+  height: 1px;
+  background: black;
+  box-shadow: 1px 10px 7px -7px rgba(0, 0, 0, 0.75);
 }
 /* ******************************************* */
