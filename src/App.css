@@ -34,7 +34,7 @@
 /* ******************************************* */
 .card-img {
   object-fit: cover;
-  width: 100%;
+  height: 800px;
   border-radius: 0;
 }
 
@@ -50,8 +50,32 @@
   content: "";
   display: block;
   width: 22%;
-  height: 1px;
+  height: 2px;
+  transform: translateX(32spx);
   background: black;
   box-shadow: 1px 10px 7px -7px rgba(0, 0, 0, 0.75);
+}
+
+.hero .card-text {
+  width: 59.7%;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1200px) {
+  body .hero .card-title {
+    font-size: 54px;
+  }
+  body .hero .container {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 870px) {
+  body .hero .card-title {
+    font-size: 35px;
+  }
+  body .hero .card-text {
+    font-size: 16px;
+    width: 81%;
+  }
 }
 /* ******************************************* */
