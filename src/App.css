@@ -36,6 +36,7 @@
   object-fit: cover;
   height: 805px;
   border-radius: 0;
+  filter: saturate(150%);
 }
 
 .hero .card-title {

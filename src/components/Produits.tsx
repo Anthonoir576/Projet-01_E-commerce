@@ -50,6 +50,9 @@ const Produits = () => {
                         <h2 className='recent display-6 fw-bolder text-end'>Ajout récent</h2>
                     </div>
                 </div>
+                <div className="row justify-content-center">
+                    
+                </div>
             </div>
         </div>
     );
