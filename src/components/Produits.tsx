@@ -58,7 +58,7 @@ const Produits = () => {
                         {product.price} €
                     </p>
                     <a href="*" className="btn btn-danger">
-                        Ajouter au panier
+                    Ajouter   <i className="fa fa-shopping-cart"></i>
                     </a>
                   </div>
                 </div>
