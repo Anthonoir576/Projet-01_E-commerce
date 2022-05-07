@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import Loading from './Loading';
+import ShowProducts from './ShowProducts';
 
 
 
@@ -51,7 +53,7 @@ const Produits = () => {
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    
+                    {loading ? <Loading /> : <ShowProducts />}
                 </div>
             </div>
         </div>
