@@ -27,18 +27,45 @@ const Produits = () => {
     getProducts();
   }, []);
 
-  const ShowProducts = () => {
+  const filterProduct = (categorie?: any) => {
+    const updateList = data.filter((x? :any) => x.category === categorie);
+    setFilter(updateList);
+  };
+
+  const ShowProducts = (value?: any) => {
     return (
       <>
         <div className="btn-filter container buttons mb-5 pb-5">
-          <button className="btn btn-outline-dark me-2">
+          <button
+            className="btn btn-outline-dark me-2"
+            onClick={() => {
+              setFilter(data);
+            }}
+          >
             Tous les produits
           </button>
-          <button className="btn btn-outline-dark me-2">
+          <button
+            className="btn btn-outline-dark me-2"
+            onClick={() => {
+              filterProduct("men's clothing");
+            }}
+          >
             Nouveauté pour lui
           </button>
-          <button className="btn btn-outline-dark me-2">Biker style</button>
-          <button className="btn btn-outline-dark me-2">
+          <button
+            className="btn btn-outline-dark me-2"
+            onClick={() => {
+              filterProduct("women's clothing");
+            }}
+          >
+            Biker style
+          </button>
+          <button
+            className="btn btn-outline-dark me-2"
+            onClick={() => {
+              filterProduct("jewelery");
+            }}
+          >
             Collection retro
           </button>
         </div>
@@ -53,12 +80,14 @@ const Produits = () => {
                     alt={product.title}
                   />
                   <div className="card-body text-center">
-                    <h5 className="card-title">{product.title.substring(0,70)}</h5>
+                    <h5 className="card-title">
+                      {product.title.substring(0, 70)}
+                    </h5>
                     <p className="card-text fw-bolder text-center">
-                        <em>{product.price}</em> €
+                      <em>{product.price}</em> €
                     </p>
                     <a href="*" className="btn btn-danger">
-                    Ajouter   <i className="fa fa-shopping-cart"></i>
+                      Ajouter <i className="fa fa-shopping-cart"></i>
                     </a>
                   </div>
                 </div>
