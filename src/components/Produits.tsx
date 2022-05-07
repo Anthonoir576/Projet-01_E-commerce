@@ -30,7 +30,7 @@ const Produits = () => {
   const ShowProducts = () => {
     return (
       <>
-        <div className="container buttons mb-5 pb-5">
+        <div className="btn-filter container buttons mb-5 pb-5">
           <button className="btn btn-outline-dark me-2">
             Tous les produits
           </button>
@@ -46,20 +46,19 @@ const Produits = () => {
           return (
             <>
               <div className="col-md-3">
-                <div className="card">
+                <div className="card carte-produit">
                   <img
-                    src="https://dsdsd.fr"
-                    className="card-img-top"
-                    alt="produit"
+                    src={product.image}
+                    className="card-img-top carte-produit-img"
+                    alt={product.title}
                   />
                   <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">{product.title}</h5>
                     <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                        {product.price} €
                     </p>
-                    <a href="*" className="btn btn-primary">
-                      Go somewhere
+                    <a href="*" className="btn btn-danger">
+                        Ajouter au panier
                     </a>
                   </div>
                 </div>
