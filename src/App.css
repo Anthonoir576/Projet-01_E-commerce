@@ -16,7 +16,7 @@
 .navbar-brand::first-letter {
   transform: scale(1.5);
   font-weight: 700;
-  color: red;
+  color: #bb2d3b;
 }
 .navbar .buttons .btn {
   font-size: 13px;
@@ -26,8 +26,20 @@
 }
 
 .buttons .btn:hover {
-  background: red;
-  border: 1px solid red;
+  background: #bb2d3b;
+  border: 1px solid #bb2d3b;
+}
+
+.navbar .navbar-nav .nav-item .active {
+  color: #bb2d3b;
+}
+
+.active::after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 1px;
+  background: #bb2d3b;
 }
 
 @media only screen and (max-width: 1090px) {
@@ -54,12 +66,12 @@
   margin-bottom: 2rem;
 }
 .hero .card-title::first-letter {
-  color: red;
-  font-weight: 300;
+  color: #bb2d3b;
+  font-weight: 600;
 }
 .card-hero .card-title::first-letter,
 .recent::first-letter {
-  color: red;
+  color: #bb2d3b;
   font-weight: 700;
 }
 .card-hero .card-title::after {
@@ -144,7 +156,7 @@
   margin: 0 auto;
   width: 15%;
   height: 15%;
-  background-color: rgb(255, 0, 0);
+  background-color: #bb2d3b;
   border-radius: 100%;
   animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
 }
