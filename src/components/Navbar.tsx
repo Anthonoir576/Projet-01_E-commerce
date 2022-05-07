@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm border-bottom">
         <div className="container-fluid">
           <a className="navbar-brand fs-4" href="*">
             La boutique pour lui
@@ -31,7 +31,7 @@ const Navbar = () => {
                   aria-current="page"
                   href="*"
                 >
-                  Home
+                  Accueil
                 </a>
               </li>
               <li className="nav-item">
