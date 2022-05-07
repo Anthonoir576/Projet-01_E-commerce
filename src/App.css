@@ -16,3 +16,13 @@
 nav.navbar {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.212);
 }
+
+.navbar .buttons .btn {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 1090px) {
+  .navbar .buttons .btn {
+    font-size: 11px;
+  }
+}

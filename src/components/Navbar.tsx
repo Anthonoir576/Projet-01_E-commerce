@@ -4,12 +4,12 @@ const Navbar = () => {
 
 
 
-  
+
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div className="container-fluid">
-          <a className="navbar-brand" href="*">
+          <a className="navbar-brand fs-4" href="*">
             La boutique pour lui
           </a>
           <button
@@ -24,7 +24,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a
                   className="nav-link active"
@@ -36,63 +36,31 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="*">
-                  Link
+                  Produits
                 </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="*"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a className="dropdown-item" href="*">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="*">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="*">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link disabled"
-                  href="*"
-                  tabIndex={-1}
-                  aria-disabled="true"
-                >
-                  Disabled
+                <a className="nav-link" href="*">
+                  À propos
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="*">
+                  Contact
                 </a>
               </li>
             </ul>
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            <div className="buttons">
+              <a href="*" className="btn btn-outline-dark">
+                <i className="fa fa-sign-in me-1"></i> Connexion
+              </a>
+              <a href="*" className="btn btn-outline-dark ms-2">
+                <i className="fa fa-user-plus me-1"></i> S'enregistrer
+              </a>
+              <a href="*" className="btn btn-outline-dark ms-2">
+                <i className="fa fa-shopping-cart me-1"></i> Panier (0)
+              </a>
+            </div>
           </div>
         </div>
       </nav>
