@@ -1,12 +1,7 @@
-import React       from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
-
 const Navbar = () => {
-
-
-
-
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm border-bottom">
@@ -18,8 +13,8 @@ const Navbar = () => {
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -28,11 +23,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink
-                  className="nav-link"
-                  aria-current="page"
-                  to="/"
-                >
+                <NavLink className="nav-link" aria-current="page" to="/">
                   Accueil
                 </NavLink>
               </li>

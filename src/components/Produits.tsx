@@ -28,47 +28,13 @@ const Produits = () => {
   }, []);
 
   const filterProduct = (categorie?: any) => {
-    const updateList = data.filter((x? :any) => x.category === categorie);
+    const updateList = data.filter((x?: any) => x.category === categorie);
     setFilter(updateList);
   };
 
   const ShowProducts = (value?: any) => {
     return (
       <>
-        <div className="btn-filter container buttons mb-5 pb-5">
-          <button
-            className="btn btn-outline-dark me-2"
-            onClick={() => {
-              setFilter(data);
-            }}
-          >
-            Tous les produits
-          </button>
-          <button
-            className="btn btn-outline-dark me-2"
-            onClick={() => {
-              filterProduct("men's clothing");
-            }}
-          >
-            Nouveauté pour lui
-          </button>
-          <button
-            className="btn btn-outline-dark me-2"
-            onClick={() => {
-              filterProduct("women's clothing");
-            }}
-          >
-            Biker style
-          </button>
-          <button
-            className="btn btn-outline-dark me-2"
-            onClick={() => {
-              filterProduct("jewelery");
-            }}
-          >
-            Collection retro
-          </button>
-        </div>
         {filter.map((product?: any) => {
           return (
             <>
@@ -110,6 +76,40 @@ const Produits = () => {
           </div>
         </div>
         <div className="row justify-content-center">
+          <div className="btn-filter container buttons mb-5 pb-5">
+            <button
+              className="btn btn-outline-dark me-2"
+              onClick={() => {
+                setFilter(data);
+              }}
+            >
+              Tous les produits
+            </button>
+            <button
+              className="btn btn-outline-dark me-2"
+              onClick={() => {
+                filterProduct("men's clothing");
+              }}
+            >
+              Nouveauté pour lui
+            </button>
+            <button
+              className="btn btn-outline-dark me-2"
+              onClick={() => {
+                filterProduct("women's clothing");
+              }}
+            >
+              Biker style
+            </button>
+            <button
+              className="btn btn-outline-dark me-2"
+              onClick={() => {
+                filterProduct("jewelery");
+              }}
+            >
+              Collection retro
+            </button>
+          </div>
           {loading ? <Loading /> : <ShowProducts />}
         </div>
       </div>
