@@ -30,6 +30,10 @@
   border: 1px solid #bb2d3b;
 }
 
+.buttons .btn:hover em {
+  color: white;
+}
+
 .navbar .navbar-nav .nav-item .active {
   color: #bb2d3b;
 }
@@ -357,5 +361,16 @@
     margin-top: 1rem;
     background: black;
   }
+}
+/* ******************************************* */
+
+
+
+/* Navbar panier */
+/* ******************************************* */
+.count-cart {
+  font-style: normal;
+  font-weight: 700;
+  color: #bb2d3b;
 }
 /* ******************************************* */
