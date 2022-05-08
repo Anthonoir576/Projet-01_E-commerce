@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Loading from "./Loading";
+import Loading                        from "./Loading";
+import { NavLink }                    from 'react-router-dom';
 
 const Produits = () => {
-  const [data, setData] = useState([]);
-  const [filter, setFilter] = useState(data);
+  const [data, setData]       = useState([]);
+  const [filter, setFilter]   = useState(data);
   const [loading, setLoading] = useState(false);
 
   let componentMounted: boolean = true;
@@ -18,7 +19,7 @@ const Produits = () => {
         setData(await reponse.clone().json());
         setFilter(await reponse.json());
         setLoading(false);
-      }
+      };
 
       // eslint-disable-next-line react-hooks/exhaustive-deps
       return () => (componentMounted = false);
@@ -52,9 +53,9 @@ const Produits = () => {
                     <p className="card-text fw-bolder text-center">
                       <em>{product.price}</em> €
                     </p>
-                    <a href="*" className="btn btn-danger">
+                    <NavLink to={`/produit/${product.id}`} className="btn btn-danger">
                       Ajouter <i className="fa fa-shopping-cart"></i>
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
