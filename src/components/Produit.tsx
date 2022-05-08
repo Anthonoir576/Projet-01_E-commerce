@@ -33,10 +33,10 @@ const Produit = () => {
                     />
                 </div>
                 <div className="col-md-6 produit-solo produit-solo-footer">
-                    <h2 className="text-uppercase text-black-50">
+                    <h2 className="text-uppercase text-black-50 produit-solo-title">
                         <em>{produit.category}</em>
                     </h2>
-                    <h3 className="display-5 produit-solo-title">
+                    <h3 className="display-5 produit-solo-title produit-solo-title-first">
                         {produit.title}
                     </h3>
                     <p className="lead rating">
@@ -67,7 +67,7 @@ const Produit = () => {
 
   return (
     <div>
-        <div className="container">
+        <div className="container produit-solo-container">
             <div className="row">
                 {loading ? <Loading /> : <ShowProduct />}
             </div>
