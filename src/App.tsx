@@ -4,7 +4,7 @@ import Home              from "./components/Home";
 import { Route, Routes } from "react-router-dom";
 import Produits          from './components/Produits';
 import Produit           from './components/Produit';
-import Cart from './components/Cart';
+import Cart              from './components/Cart';
 
 function App() {
   return (
