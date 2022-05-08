@@ -56,7 +56,7 @@ const Produit = () => {
                             Ajouter au panier   
                             <i className="fa fa-shopping-cart"></i>
                         </button>
-                        <NavLink className='btn btn-outline-dark cart' to='/cart'>
+                        <NavLink className='btn btn-danger cart' to='/cart'>
                             Voir le panier
                         </NavLink>
                     </div>
