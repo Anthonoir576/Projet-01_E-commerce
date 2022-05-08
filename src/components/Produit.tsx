@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { useParams, NavLink }         from 'react-router-dom';
 import Loading                        from "./Loading";
-
+import { useDispatch }                from "react-redux";
+import { addCart }                    from "../redux/action";
 const Produit = () => {
 
     const {id}                  :any     = useParams();
     const [produit, setProduit] :any     = useState([]);
     const [loading, setLoading] :any     = useState(false);
+
+    const dispatch                       = useDispatch();
+
+    const addProduct = (product? :any) => {
+        dispatch(addCart(product));
+    };
 
     useEffect((val? :any) => {
 
@@ -52,7 +59,9 @@ const Produit = () => {
                         {produit.description}
                     </p>
                     <div className="d-flex justify-content-between mt-5 btn-forCard">
-                        <button className="btn btn-outline-dark add-cart"> 
+                        <button className="btn btn-outline-dark add-cart"
+                                onClick={() => {addProduct(produit)}}
+                        > 
                             Ajouter au panier   
                             <i className="fa fa-shopping-cart"></i>
                         </button>
