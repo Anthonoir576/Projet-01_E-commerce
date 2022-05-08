@@ -17,6 +17,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="container text-center py-2 arrow-container shadow-sm">
+        <i className="fa fa-arrow-down"></i>
+      </div>
       <Produits />
     </div>
   );
