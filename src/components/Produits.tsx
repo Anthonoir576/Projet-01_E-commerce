@@ -54,7 +54,7 @@ const Produits = () => {
                       <em>{product.price}</em> €
                     </p>
                     <NavLink to={`/produit/${product.id}`} className="btn btn-danger">
-                      Ajouter <i className="fa fa-shopping-cart"></i>
+                      En savoir plus <i className="fa fa-shopping-cart"></i>
                     </NavLink>
                   </div>
                 </div>

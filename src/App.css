@@ -283,3 +283,47 @@
   margin-bottom: 7px;
 }
 /* ******************************************* */
+
+
+
+/* Produit individuel */
+/* ******************************************* */
+.produit-solo {
+  margin-top: 2rem;
+}
+.add-cart i {
+  margin-left: .4rem;
+}
+.produit-solo .btn:hover {
+  background: #bb2d3b;
+  border: 1px solid #bb2d3b;
+}
+.produit-solo-title::first-letter {
+  color: #bb2d3b;
+  font-weight: 700;
+}
+.fa-star {
+  color: #FDCC0D;
+}
+.produit-solo strong {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.rating {
+  margin: 2rem 0 2px 0;
+}
+.produit-solo.img {
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+}
+.produit-solo.img img {
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+  padding: 0 10px;
+}
+.btn-forCard {
+  margin-bottom: 2rem;
+}
+/* ******************************************* */

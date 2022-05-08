@@ -21,44 +21,45 @@ const Produit = () => {
 
     const ShowProduct = () => {
 
-        console.log(produit);
+        // console.log(produit);
         
 
         return (
             <>
-                <div className="col-md-6 produit-solo">
+                <div className="col-md-6 produit-solo img">
                     <img src={produit.image} 
                          alt={produit.title}
-                         width='400px'
-                         height='400px' 
+
                     />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 produit-solo produit-solo-footer">
                     <h2 className="text-uppercase text-black-50">
-                        {produit.category}
+                        <em>{produit.category}</em>
                     </h2>
-                    <h3 className="display-5">
+                    <h3 className="display-5 produit-solo-title">
                         {produit.title}
                     </h3>
-                    <p className="lead">
-                        <strong>Note :</strong> {produit.rating.rate} <i className="fa fa-star"></i>
+                    <p className="lead rating">
+                        <strong>Note</strong> : {produit.rating ? produit.rating.rate : '0'} <i className="fa fa-star"></i>
                     </p>
-                    <p className="lead">
-                        <strong>Évaluation :</strong> {produit.rating.count} client{produit.rating.count > 1 ? 's' : ''}
+                    <p className="lead rating-count">
+                        <strong>Évaluation</strong> : {produit.rating ? produit.rating.count : 0} client{produit.rating ? produit.rating.count  > 1 ? 's' : '' : ''}
                     </p>
-                    <h4 className="display-6 my-4">
+                    <h4 className="display-6 my-4 mt-5">
                         <em>{produit.price}</em> €
                     </h4>
-                    <p className="lead">
+                    <p className="lead mt-5">
                         {produit.description}
                     </p>
-                    <button className="btn btn-outline-dark add-cart"> 
-                        Ajouter au panier   
-                        <i className="fa fa-shopping-cart"></i>
-                    </button>
-                    <NavLink className='btn btn-outline-dark cart' to='/cart'>
-                        Voir le panier
-                    </NavLink>
+                    <div className="d-flex justify-content-between mt-5 btn-forCard">
+                        <button className="btn btn-outline-dark add-cart"> 
+                            Ajouter au panier   
+                            <i className="fa fa-shopping-cart"></i>
+                        </button>
+                        <NavLink className='btn btn-outline-dark cart' to='/cart'>
+                            Voir le panier
+                        </NavLink>
+                    </div>
                 </div>
             </>
         )
